@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.png"  class="logo" alt=""></a>
+            <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Menu</a></li>
+             <li><a href="#">Whats New</a></li>
+             <li><a href="#">Contact</a></li>  
+            </ul>
+        </header>
+        <div class="content">
+        <div class="textbox">
+            <h2>It's not just coffee<br>It's <span>StarBucks</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi minus quas non ullam nisi nostrum voluptatibus amet voluptatum. Officia saepe tempora laudantium provident fugiat ullam autem</p>
+        <a href="#">Learn More</a>
+        </div>
+        <div class="imgbox">
+            <img src="./img1.png" class="starbucks" alt="starbucks">
+        </div>  
+        </div>  
+        <ul class="thumb">
+            <li><img src="./thumb1.png" onclick="imgslider('img1.png');changecirclecolor('#017143')"></li>
+            <li><img src="./thumb2.png" onclick="imgslider('img2.png');changecirclecolor('#eb7495')"></li>
+            <li><img src="./thumb3.png" onclick="imgslider('img3.png');changecirclecolor('#d752b1')"></li>
+            <h2><marquee style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Welcome to StarBucks</marquee></h2>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="./twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+    function imgslider(anything){
+        document.querySelector('.starbucks').src = anything;
+    }
+    function changecirclecolor(color)
+    {
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+    </script> 
+</body>
+</html>
